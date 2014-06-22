@@ -1,0 +1,109 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    padding: 0; margin: 0;
+    height: 100%;
+    background-color: #333; color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+body > div {
+    white-space: nowrap;
+    height: 100%;
+}
+
+/* sidebar */
+
+body > div > div:first-child {
+    width: 300px;
+    display: inline-block; vertical-align: top;
+    white-space: normal;
+    border-right: solid 1px #666;
+    height: 100%;
+}
+
+form {
+    padding: 10px;
+    height: 100%;
+}
+
+form > div,
+form > label {
+    margin-bottom: 15px;
+}
+
+form #cyl label.checkbox {
+    display: inline-block; vertical-align: top;
+    margin-right: 10px; margin-top: 5px;
+}
+
+form label {
+    display: block;
+}
+
+span.jslider {
+    margin-bottom: 27px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.jslider_plastic .jslider-bg i, .jslider_plastic .jslider-pointer {
+    background-image: none !important;
+}
+
+span.jslider .jslider-bg .l,
+span.jslider .jslider-bg .r {
+    background-color: #999;
+}
+
+span.jslider .jslider-bg .v {
+    background-color: #EEE;
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+input[type=checkbox]:after {
+    visibility: visible;
+    cursor: pointer;
+    content: "";
+    background-image: none;
+    display: inline-block;
+    width: 10px; height: 10px;
+    border: solid 1px #EEE; border-radius: 50%;
+}
+
+input[type=checkbox]:checked:after {
+    background-color: #EEE;
+}
+
+input[type=checkbox] + span {
+    cursor: pointer;
+}
+
+
+
+/* main */
+
+body > div > div:last-child {
+    display: inline-block; vertical-align: top;
+    white-space: normal;
+    padding: 10px;
+}
+
+#cars table td,
+#cars table th {
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    font-size: 12px;
+}
